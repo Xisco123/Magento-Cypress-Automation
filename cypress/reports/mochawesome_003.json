@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-04T16:49:04.270Z",
+    "end": "2023-12-04T16:49:23.532Z",
+    "duration": 19262,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "edb93ad2-e86f-425c-bc93-eeb742df9481",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Sign In\\SignIn.cy.js",
+      "file": "cypress\\e2e\\Sign In\\SignIn.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Login Page test",
+          "fullTitle": "Login Page test",
+          "timedOut": null,
+          "duration": 14054,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "_checkUrlMagento.default.checkUrlMagento();\n_SignIn.default.SignInMagento();",
+          "err": {},
+          "uuid": "aec853cb-6598-4422-b30c-b369846744c0",
+          "parentUUID": "edb93ad2-e86f-425c-bc93-eeb742df9481",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "aec853cb-6598-4422-b30c-b369846744c0"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 14054,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

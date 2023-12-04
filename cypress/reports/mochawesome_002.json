@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-04T16:48:32.361Z",
+    "end": "2023-12-04T16:48:58.673Z",
+    "duration": 26312,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2922876d-ad99-4ef6-bc87-dd7eb9399d28",
+      "title": "",
+      "fullFile": "cypress\\e2e\\New Account\\CreateAccount.cy.js",
+      "file": "cypress\\e2e\\New Account\\CreateAccount.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Launch Url",
+          "fullTitle": "Launch Url",
+          "timedOut": null,
+          "duration": 4387,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "_checkUrlMagento.default.checkUrlMagento();",
+          "err": {},
+          "uuid": "e3101de4-8f28-47b9-8c0b-e33f3c1cae33",
+          "parentUUID": "2922876d-ad99-4ef6-bc87-dd7eb9399d28",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Create a New Account",
+          "fullTitle": "Create a New Account",
+          "timedOut": null,
+          "duration": 16363,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "_checkUrlMagento.default.checkUrlMagento();\n_CreateAccount.default.NewAccount('Nicolas', 'Gauthier', 'nicolas@test.ca', 'Nicolas@123', 'Nicolas@123');",
+          "err": {
+            "message": "CypressError: Timed out after `4000ms`. The `done()` callback was never invoked!",
+            "estack": "CypressError: Timed out after `4000ms`. The `done()` callback was never invoked!\n    at cypressErr (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:75240:18)\n    at Object.errByPath (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:75295:10)\n    at https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:146195:72",
+            "diff": null
+          },
+          "uuid": "1eea096a-0f0a-4550-9199-68e35a844da1",
+          "parentUUID": "2922876d-ad99-4ef6-bc87-dd7eb9399d28",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "e3101de4-8f28-47b9-8c0b-e33f3c1cae33"
+      ],
+      "failures": [
+        "1eea096a-0f0a-4550-9199-68e35a844da1"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 20750,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
