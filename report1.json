@@ -1,0 +1,228 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2023-12-04T16:46:31.059Z",
+    "end": "2023-12-04T16:49:23.532Z",
+    "duration": 172473
+  },
+  "results": [
+    {
+      "uuid": "6f026ef4-7f22-4612-b27d-61592fbc0936",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Delete Item\\DeleteItem.cy.js",
+      "file": "cypress\\e2e\\Delete Item\\DeleteItem.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Delte item from Panier",
+          "fullTitle": "Delte item from Panier",
+          "timedOut": null,
+          "duration": 26188,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "_checkUrlMagento.default.checkUrlMagento();\n_SignIn.default.SignInMagento();\n_AddNewItem.default.Add_New_Item();\n_DeleteItem.default.DeleteItem();",
+          "err": {},
+          "uuid": "755520c0-7abf-4209-be3d-2ae431ea9878",
+          "parentUUID": "6f026ef4-7f22-4612-b27d-61592fbc0936",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "755520c0-7abf-4209-be3d-2ae431ea9878"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 26188,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2922876d-ad99-4ef6-bc87-dd7eb9399d28",
+      "title": "",
+      "fullFile": "cypress\\e2e\\New Account\\CreateAccount.cy.js",
+      "file": "cypress\\e2e\\New Account\\CreateAccount.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Launch Url",
+          "fullTitle": "Launch Url",
+          "timedOut": null,
+          "duration": 4387,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "_checkUrlMagento.default.checkUrlMagento();",
+          "err": {},
+          "uuid": "e3101de4-8f28-47b9-8c0b-e33f3c1cae33",
+          "parentUUID": "2922876d-ad99-4ef6-bc87-dd7eb9399d28",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Create a New Account",
+          "fullTitle": "Create a New Account",
+          "timedOut": null,
+          "duration": 16363,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "_checkUrlMagento.default.checkUrlMagento();\n_CreateAccount.default.NewAccount('Nicolas', 'Gauthier', 'nicolas@test.ca', 'Nicolas@123', 'Nicolas@123');",
+          "err": {
+            "message": "CypressError: Timed out after `4000ms`. The `done()` callback was never invoked!",
+            "estack": "CypressError: Timed out after `4000ms`. The `done()` callback was never invoked!\n    at cypressErr (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:75240:18)\n    at Object.errByPath (https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:75295:10)\n    at https://magento.softwaretestingboard.com/__cypress/runner/cypress_runner.js:146195:72",
+            "diff": null
+          },
+          "uuid": "1eea096a-0f0a-4550-9199-68e35a844da1",
+          "parentUUID": "2922876d-ad99-4ef6-bc87-dd7eb9399d28",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "e3101de4-8f28-47b9-8c0b-e33f3c1cae33"
+      ],
+      "failures": [
+        "1eea096a-0f0a-4550-9199-68e35a844da1"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 20750,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "edb93ad2-e86f-425c-bc93-eeb742df9481",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Sign In\\SignIn.cy.js",
+      "file": "cypress\\e2e\\Sign In\\SignIn.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Login Page test",
+          "fullTitle": "Login Page test",
+          "timedOut": null,
+          "duration": 14054,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "_checkUrlMagento.default.checkUrlMagento();\n_SignIn.default.SignInMagento();",
+          "err": {},
+          "uuid": "aec853cb-6598-4422-b30c-b369846744c0",
+          "parentUUID": "edb93ad2-e86f-425c-bc93-eeb742df9481",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "aec853cb-6598-4422-b30c-b369846744c0"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 14054,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b8927be4-95cc-457c-a14a-b53b360dcffc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Add Item\\AddNewItem.cy.js",
+      "file": "cypress\\e2e\\Add Item\\AddNewItem.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Add New Item for Men to Bagg",
+          "fullTitle": "Add New Item for Men to Bagg",
+          "timedOut": null,
+          "duration": 67091,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "_checkUrlMagento.default.checkUrlMagento();\n_SignIn.default.SignInMagento('nicolas@test.ca', 'Nicolas@123');\n_AddNewItem.default.Add_New_Item();",
+          "err": {},
+          "uuid": "2268085e-1b42-4803-a10b-20b7422a9cbd",
+          "parentUUID": "b8927be4-95cc-457c-a14a-b53b360dcffc",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "2268085e-1b42-4803-a10b-20b7422a9cbd"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 67091,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

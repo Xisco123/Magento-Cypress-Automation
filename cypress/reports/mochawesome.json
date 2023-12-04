@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-04T16:46:31.059Z",
+    "end": "2023-12-04T16:47:47.298Z",
+    "duration": 76239,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b8927be4-95cc-457c-a14a-b53b360dcffc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Add Item\\AddNewItem.cy.js",
+      "file": "cypress\\e2e\\Add Item\\AddNewItem.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Add New Item for Men to Bagg",
+          "fullTitle": "Add New Item for Men to Bagg",
+          "timedOut": null,
+          "duration": 67091,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "_checkUrlMagento.default.checkUrlMagento();\n_SignIn.default.SignInMagento('nicolas@test.ca', 'Nicolas@123');\n_AddNewItem.default.Add_New_Item();",
+          "err": {},
+          "uuid": "2268085e-1b42-4803-a10b-20b7422a9cbd",
+          "parentUUID": "b8927be4-95cc-457c-a14a-b53b360dcffc",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "2268085e-1b42-4803-a10b-20b7422a9cbd"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 67091,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
