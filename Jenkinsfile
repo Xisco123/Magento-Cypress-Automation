@@ -18,7 +18,7 @@ pipeline {
 
         stage('Exécution des Tests Cypress') {
             steps {
-                // Exécutez les tests Cypress
+                // Exécutez les tests Cypress 8
                 sh 'npx cypress open'
             }
         }
