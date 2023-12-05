@@ -1,23 +1,26 @@
 pipeline {
     agent any
 
+    environment {
+        // Spécifiez l'emplacement de NodeJS dans le PATH
+        PATH = "$PATH:/chemin/vers/votre/nodejs/bin"
+    }
+
     stages {
-        stage('Install Dependencies') {
+        stage('Installation') {
             steps {
                 script {
-                    // Utilisez NodeJS installé pour installer les dépendances
-                    def npmHome = tool 'NodeJS 14'
-                    bat "${npmHome}\\npm install"
+                    // Installez les dépendances Cypress
+                    sh 'npm install'
                 }
             }
         }
 
-        stage('Run Cypress Tests') {
+        stage('Exécution des Tests Cypress') {
             steps {
                 script {
                     // Exécutez les tests Cypress
-                    def npmHome = tool 'NodeJS 14'
-                    bat "${npmHome}\\npx cypress run"
+                    sh 'npx cypress run'
                 }
             }
         }
@@ -29,3 +32,7 @@ pipeline {
         }
     }
 }
+
+
+
+
