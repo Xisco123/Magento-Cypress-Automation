@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     environment {
-        // Spécifiez l'emplacement de NodeJS dans le PATH
+        // Spécifiez le chemin vers le dossier bin de NodeJS dans le PATH
         PATH = "$PATH:/chemin/vers/votre/nodejs/bin"
     }
 
     stages {
         stage('Installation') {
             steps {
+                // Installez les dépendances Cypress
                 script {
-                    // Installez les dépendances Cypress
                     sh 'npm install'
                 }
             }
@@ -18,10 +18,8 @@ pipeline {
 
         stage('Exécution des Tests Cypress') {
             steps {
-                script {
-                    // Exécutez les tests Cypress
-                    sh 'npx cypress run'
-                }
+                // Exécutez les tests Cypress
+                sh 'npx cypress run'
             }
         }
     }
@@ -32,7 +30,3 @@ pipeline {
         }
     }
 }
-
-
-
-
