@@ -21,6 +21,10 @@ pipeline {
                 // Exécutez les tests Cypress 8
                 sh 'npx cypress open'
             }
+            script {
+            def npmHome = tool 'NodeJS 14'
+            sh "${npmHome}/npx cypress run --reporter mochawesome"
+        }
         }
     }
 
