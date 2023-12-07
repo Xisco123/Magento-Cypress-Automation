@@ -3,7 +3,7 @@ name: Run Cypress Tests
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   cypress-run:
@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -22,7 +22,7 @@ jobs:
       run: npm install
 
     - name: Run Cypress Tests
-      run: npx cypress open:open
+      run: npm run cypress:run
 
     - name: Upload Mochawesome Report
       uses: actions/upload-artifact@v2
