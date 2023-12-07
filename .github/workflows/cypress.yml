@@ -22,7 +22,7 @@ jobs:
       run: npm install
 
     - name: Run Cypress Tests
-      run: npm run cypress:run
+      run: npx cypress open:open
 
     - name: Upload Mochawesome Report
       uses: actions/upload-artifact@v2
