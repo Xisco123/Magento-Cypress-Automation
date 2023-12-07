@@ -1,25 +1,25 @@
----
 name: Run Cypress Tests
+
 on:
   push:
     branches:
       - master
+
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "14"
-      - name: Install dependencies
-        run: npm install
-      - name: Run Cypress Tests
-        run: npm run cypress:run
-      - name: Upload Mochawesome Report
-        uses: actions/upload-artifact@v2
-        with:
-          name: cypress-results
-          path: cypress/report/mochawesome-report
+    - name: Checkout code
+      uses: actions/checkout@v2.5.0  # Mettez à jour cette ligne avec une version plus récente, par exemple, v2.5.0
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3.2.0  # Utilisez une version plus récente si nécessaire, par exemple, v3.2.0
+      with:
+        node-version: '16'  # Spécifiez la version de Node.js que vous souhaitez utiliser
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Cypress tests
+      run: npm run cypress:run
